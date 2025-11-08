@@ -1,0 +1,47 @@
+{
+  "name": "ethrsite",
+  "version": "1.0.0",
+  "description": "EthrSITE - Modern website builder with natural language communication and integrated marketing tools",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development payload dev",
+    "build": "cross-env NODE_ENV=production payload build",
+    "serve": "cross-env NODE_ENV=production payload start",
+    "generate:types": "payload generate:types",
+    "db:seed": "cross-env NODE_ENV=development payload db:seed"
+  },
+  "dependencies": {
+    "@payloadcms/bundler-webpack": "^1.0.0",
+    "@payloadcms/db-postgres": "^1.0.0",
+    "@payloadcms/email-nodemailer": "^1.0.0",
+    "@payloadcms/richtext-lexical": "^1.0.0",
+    "@payloadcms/next": "^1.0.0",
+    "@payloadcms/ui": "^1.0.0",
+    "payload": "^2.0.0",
+    "sharp": "^0.33.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "openai": "^4.52.0",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/uuid": "^9.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
